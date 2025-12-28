@@ -17,7 +17,7 @@ return `${formattedMinutes}:${formattedSeconds}`;
 }
 
 async function getSong() {
-  let a = await fetch("https://aniketsharma2006.github.io/spotify-clone/")
+  let a = await fetch("https://aniketsharma2006.github.io/spotify-clone/songs/")
   let response = await a.text();
     let div= document.createElement("div");
     div.innerHTML=response;
